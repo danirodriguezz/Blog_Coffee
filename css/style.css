@@ -181,3 +181,43 @@ h1.logo__nombre {
         margin-bottom: 0;
     }
 }
+/* Sobre Nosotros */
+.titulo-nosotros {
+    text-align: center;
+    font-weight: 700;
+    margin: 2.5rem 0;
+}
+.contenido-grid {
+    margin-bottom: 2.5rem;
+}
+@media (min-width: 798px) {
+    .contenido-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+    .contenido-grid,
+    .titulo-nosotros {
+        margin: 3.2rem 0;
+    }
+}
+/* Cursos */
+.cursos-grid {
+    margin: 4rem 0;
+    border-bottom: 1px solid var(--gris);
+    padding-bottom: 4rem;
+}
+@media (min-width: 798px) {
+    .cursos-grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }  
+}
+.cursos-grid:last-of-type {
+    border: none;
+    padding: 0;
+}
+.entrada-blog__parrafo {
+    margin: 2rem 0;
+}
